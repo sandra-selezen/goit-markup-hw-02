@@ -1,0 +1,58 @@
+:root {
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --title-color: #212121;
+    --text-color: #757575;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Лого стилі */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    text-decoration: none;
+}
+
+.web-header,
+.web-footer {
+    color: var(--accent-color);
+}
+
+.studio-header{
+    color: #000000;
+}
+
+.studio-footer {
+    color: var(--primary-white-color);
+}
+
+/* Header & Footer стилі */
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.02em;
+
+    color: var(--text-color);
+
+    text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus,
+.current {
+    color: var(--accent-color);
+}
+
+/* Студія стилі */
+
+/* Портфоліо стилі */
