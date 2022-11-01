@@ -8,9 +8,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
     letter-spacing: 0.03em;
 
-    color: var(--title-color);
+    color: var(--text-color);
+    background-color: var(--primary-white-color);
 }
 
 /* Обнулення стилів для посилань та списків */
@@ -24,6 +28,12 @@ body {
     padding-inline-start: unset;
 }
 
+/* Прихований заголовок */
+
+.hide {
+    display: none;
+}
+
 /* Лого стилі */
 
 .logo {
@@ -33,18 +43,15 @@ body {
     line-height: 1.2;
 
     text-decoration: none;
-}
 
-.web-header,
-.web-footer {
     color: var(--accent-color);
 }
 
-.studio-header {
+.logo-header {
     color: #000000;
 }
 
-.studio-footer {
+.logo-footer {
     color: var(--primary-white-color);
 }
 
@@ -53,7 +60,7 @@ body {
 .header-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--title-color);
@@ -65,7 +72,7 @@ body {
 .header-phone {
     font-weight: 500;
     font-size: 14px;
-    line-height: 1,14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 
     color: var(--text-color);
@@ -85,20 +92,14 @@ body {
 
 .footer-address {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1,7;
-
+    
     color: var(--primary-white-color);
 }
 
 .footer-email,
 .footer-phone {
     font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1,7;
-
+    
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -111,7 +112,7 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1, 4;
+    line-height: 1.4;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -120,78 +121,89 @@ body {
 }
 
 .hero-button {
+    padding: 10px 32px;
+
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1,9;
+    line-height: 1.9;
     letter-spacing: 0.06em;
 
     color: var(--primary-white-color);
-
-    width: 216px;
-    height: 50px;
     border-radius: 4px;
     cursor: pointer;
-    
     background-color: var(--accent-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .features-title {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1,14;
+    font-size: inherit;
+    line-height: 1.14;
     text-transform: uppercase;
-}
 
-.features-text {
-    font-size: 14px;
-    line-height: 1,7;
-
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 .work-title,
 .team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,2;
+    line-height: 1.2;
     text-align: center;
+
+    color: var(--title-color);
+}
+
+.team {
+    background-color: #F5F4FA;
 }
 
 .team-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,2;
+    line-height: 1.2;
+
+    color: var(--title-color);
 }
 
 .team-position {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1,2;
-
-    color: var(--text-color);
+    line-height: 1.2;
 }
 
 /* Портфоліо стилі */
+
+.portfolio {
+    background-color: inherit;
+}
 
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    color: var(--title-color);
 }
 
 .portfolio-text {
     font-size: 16px;
-    line-height: 1,9;
-    
-    color: var(--text-color);
+    line-height: 1.9;
 }
 
 .filter-buttons {
-    font-style: normal;
+    padding: 6px 22px;
+
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,6;
+    line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -206,4 +218,5 @@ body {
 .filter-buttons:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
